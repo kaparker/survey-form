@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans"/>
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Rock+Salt"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Survey Form</title>
+</head>
+<body>
+
+<h1 id="title">Survey form</h1>
+
+<div class="form-outer">
+    <p id="description">Feedback for latest meetup</p>
+
+    <form id="survey-form">
+        <div class="row">
+            <div class="labels">
+                <label id="name-label" for="name">* Name:</label>
+            </div>
+            <div class="right-tab">
+                <input type="text" name="name" id="name" class="input-field" placeholder="Enter your name" required>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="labels">
+                <label id="email-label" for="email">* Email:</label>
+            </div>
+            <div class="right-tab">
+                <input type="email" name="email" id="email" class="input-field" placeholder="Enter your email" required>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="labels">
+                <label id="number-label" for="number">* Age:</label>
+            </div>
+            <div class="right-tab">
+                <input type="number" min="1" max="70" name="number" id="number" class="input-field"
+                       placeholder="Enter your number" required>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="labels">
+                <label for="dropdown">Current role:</label>
+            </div>
+            <div class="right-tab">
+                <select id="dropdown" name="jobtitle" class="dropdown">
+                    <option disabled value>Select an option</option>
+                    <option value="student">Student</option>
+                    <option value="developer">Developer</option>
+                    <option value="analyst">Analyst</option>
+                    <option value="designer">Designer</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="labels">
+                <label for="attendance">Have you attended a meetup before?</label>
+            </div>
+            <div class="right-tab">
+                <ul id="attendance" style="list-style: none;">
+                    <li class="radio">
+                        <label>Yes<input name="attendance" value="1" type="radio"></label>
+                    </li>
+                    <li class="radio">
+                        <label>No<input name="attendance" value="0" type="radio"></label>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="labels">
+                <label for="future">What type of events would you like to see in the future?</label>
+            </div>
+            <div class="right-tab">
+                <ul id="future" style="list-style: none;">
+                    <li class="checkbox">
+                        <label>Workshops<input name="future" value="0" type="checkbox"></label>
+                    </li>
+                    <li class="checkbox">
+                        <label>Guest speakers<input name="future" value="1" type="checkbox"></label>
+                    </li>
+                    <li class="checkbox">
+                        <label>Hackathons<input name="future" value="1" type="checkbox"></label>
+                    </li>
+                    <li class="checkbox">
+                        <label>Networking events<input name="future" value="1" type="checkbox"></label>
+                    </li>
+                    <li class="checkbox">
+                        <label>Career events<input name="future" value="1" type="checkbox"></label>
+                    </li>
+                    <li class="checkbox">
+                        <label>Socials<input name="future" value="1" type="checkbox"></label>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="labels">
+                <label for="comments">Any comments or suggestions?</label>
+            </div>
+            <div class="right-tab">
+                <textarea id="comments" class="input-field" name="comments"
+                          placeholder="Enter your comments here"></textarea>
+            </div>
+        </div>
+
+        <button id="submit" type="submit">Submit</button>
+
+    </form>
+</div>
+
+
+<div class="footer">
+    <div id="contact">
+        <a id="github" href="https://github.com/kaparker" target="_blank"><i class="fa fa-github fa-2x"></i></a>
+        <a id="twitter" href="https://twitter.com/_kaparker" target="_blank"><i class="fa fa-twitter fa-2x"></i></a>
+        <a id="linkedin" href="https://www.linkedin.com/in/kerryaparker" target="_blank"><i
+                class="fa fa-linkedin fa-2x"></i></a>
+    </div>
+    <h3>Created by Kerry</h3>
+    <p id="footer-details">for the <a
+            href="https://learn.freecodecamp.org/responsive-web-design/responsive-web-design-projects/build-a-survey-form">FCC
+        survey form tutorial</a></p>
+</div>
+
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
