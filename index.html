@@ -14,7 +14,7 @@
 <h1 id="title">Survey form</h1>
 
 <div class="form-outer">
-    <p id="description">Feedback for latest meetup</p>
+    <p id="description">Let us know your thoughts on our latest meetup and what you'd like to see in the future!</p>
 
     <form id="survey-form">
         <div class="row">
@@ -42,7 +42,7 @@
             </div>
             <div class="right-tab">
                 <input type="number" min="1" max="70" name="number" id="number" class="input-field"
-                       placeholder="Enter your number" required>
+                       placeholder="Enter your age" required>
             </div>
         </div>
 
@@ -70,10 +70,13 @@
             <div class="right-tab">
                 <ul id="attendance" style="list-style: none;">
                     <li class="radio">
-                        <label>Yes<input name="attendance" value="1" type="radio"></label>
+                        <label>Yes<input name="attendance" value="1" type="radio" class="user-options"></label>
                     </li>
                     <li class="radio">
-                        <label>No<input name="attendance" value="0" type="radio"></label>
+                        <label>Yes, a different meetup<input name="attendance" value="2" type="radio" class="user-options"></label>
+                    </li>
+                    <li class="radio">
+                        <label>No<input name="attendance" value="0" type="radio" class="user-options"></label>
                     </li>
                 </ul>
             </div>
@@ -86,22 +89,22 @@
             <div class="right-tab">
                 <ul id="future" style="list-style: none;">
                     <li class="checkbox">
-                        <label>Workshops<input name="future" value="0" type="checkbox"></label>
+                        <label>Workshops<input name="future" value="0" type="checkbox" class="user-options"></label>
                     </li>
                     <li class="checkbox">
-                        <label>Guest speakers<input name="future" value="1" type="checkbox"></label>
+                        <label>Guest speakers<input name="future" value="1" type="checkbox" class="user-options"></label>
                     </li>
                     <li class="checkbox">
-                        <label>Hackathons<input name="future" value="1" type="checkbox"></label>
+                        <label>Hackathons<input name="future" value="1" type="checkbox" class="user-options"></label>
                     </li>
                     <li class="checkbox">
-                        <label>Networking events<input name="future" value="1" type="checkbox"></label>
+                        <label>Networking events<input name="future" value="1" type="checkbox" class="user-options"></label>
                     </li>
                     <li class="checkbox">
-                        <label>Career events<input name="future" value="1" type="checkbox"></label>
+                        <label>Career events<input name="future" value="1" type="checkbox" class="user-options"></label>
                     </li>
                     <li class="checkbox">
-                        <label>Socials<input name="future" value="1" type="checkbox"></label>
+                        <label>Socials<input name="future" value="1" type="checkbox" class="user-options"></label>
                     </li>
                 </ul>
             </div>
